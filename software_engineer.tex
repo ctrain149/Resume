@@ -1,0 +1,253 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					 %for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip}%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[a4paper, top=0.6in, bottom=0.6in, left=0.75in, right=0.75in]{geometry}
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{multicol}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{7pt}
+
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{200mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+	{\Huge Challice Genest \hfill {\small \begin{tabular}{rl}
+	
+    \textsc{} & 112 Shangri La Dr \\
+    \textsc{} & Monroeville, PA \\
+    \textsc{} & 704 743 3620\\
+    \textsc{} & \href{mailto:ctrain149@gmail.com}{ctrain149@gmail.com}
+   
+\end{tabular}}
+	}\bigskip\par}
+
+
+%--------------Professional Summary--------------------------------
+\section{Objective} 
+	Computer Engineer in search of full-time employment. Available to begin work anytime. I am interested in finding a long-term role that matches my skillset so I can continue to raise my family for the foreseeable future.
+
+	
+%------------Education------------------------------------------------
+\section{Education} {\sl Bachelor of Science,} Computer Engineering
+    % \sl will be bold italic in New Century Schoolbook (or
+	% any postscript font) and just slanted in
+	% Computer Modern (default) font
+        Rochester Institute of Technology, Rochester NY, 
+		Completed by December 2017 %\\%[-5ex]
+		%\begin{multicols}{3}
+		%	\begin{itemize}
+	    %		\itemsep -1.5pt
+				
+					%---- Software Application -----
+					%\item[] Deep Learning
+					%\item[] Machine Intelligence
+					%\item[] Computer Vision
+					%\item[] Applied Programming
+					%\item[] Senior Design
+					%\item[] Assembly Language Programming
+					%\item[] Introduction to Software Engineering
+					%\item[] Audio Engineering II
+				    %\item[] Digital Signal Processing
+				    %\item[] WITR: College Radio Station
+					%\item[] Interface and Digital Electronics
+					
+						
+					%---- Hardware Application ----
+					%\item[] Digital IC Design
+					%\item[] Computer Architecture 
+					%\item[] Digital System Design
+					%\item[] Econ: Game Theory
+					%\item[] Assembly Language Programming
+						
+					%---- Core Courses -----------
+					%\item[] Data Communication and Networks
+					%\item[] Computer Science
+					%\item[] Calculus I-III
+					%\item[] Physics I-II
+					
+		%	\end{itemize}
+		% \end{multicols}
+	
+%---------Experience---------------------------------------------------
+\section{Engineering Work Experience}
+    {\sl Bank of New York -}{ Pittsburgh, PA - VP Engineer, Dec 2024 to Present}
+        \begin{itemize}
+            \item Worked with a team of seven (all overseas team members) to provide US timezone support for live trading services. Job duties included feature updates, bug fixes, and weekend release/testing support for 20+ production microservices.
+            \item Worked on over 20 live production services in Java Spring, Angular, and Ruby on Rails. The services were deployed using AppEngine technologies, which were switching over to GitLab.
+            \item Ruby on Rails services were actively being converted or completely rewritten to Java Spring services.
+            \item Java services used as REST endpoints, routing management, message management, and data reference tools.
+            \item Ruby on Rails and Java Spring code bases were tested using RSpec and JUnit, respectively.
+            \item Working on Angular 12 front-end and upgrading the front-end applications to Angular 14, Angular 16, and most recently to Angular 18. Much time was spent upgrading packages for Angular, Material, CSS, Babel, and related tools.
+            \item Java Spring back-end used for REST API and overnight data retrieval work. Apache POI was used for reading and writing documents for reporting. Java JMS was used for emailing and logging. Hibernate JPA ORM was used for services that were designated for heavy data management.
+            \item Minor use of Python and CLI scripting for live production assistance with data and deployment scenarios.
+            \item Git version management was used to manage code changes to GitLab repositories.
+            \item Postgres and Oracle database technologies were used to store relational tables, views, and materialized views.
+            \item Used Windsurf AI to generate 2400+ test files for entire project.
+            \item Languages used: Java, Ruby, Python, Bash CLI, Typescript, CSS + HTML, SQL
+        \end{itemize}
+    {\sl Fidelity Investments -}{ Charlotte, NC - Senior Software Engineer, Jan 2022 to Nov 2024}
+        \begin{itemize}
+            \item I worked on a team of four colleagues on the company's change management system, sharpening my technical design and leadership skills, mentoring junior developers, and roadmapping future designs. Skills in full-stack web development (VueJS and Angular) reached a principal level.
+            \item The change management system was originally built with VueJS, but after teams were reconsolidated, a new one was developed with Angular 14.
+            \item Testing for VueJS and Angular front-end frameworks used Jest.
+            \item Java Spring back-end used for REST API and overnight data retrieval work. Apache POI was used for reading and writing documents for reporting. Java JMS was used for emailing and logging. Hibernate JPA ORM was used for services that were designated for heavy data management.
+            \item Used PostgREST in back-end to provide direct "SQL-like" fetching capabilities for the front-end. Developers did not need to create a new REST endpoint for every unique fetch.
+            \item Minor use of Python and CLI scripting for live production assistance with data and deployment scenarios.
+            \item Git version management was used to manage code changes to BitBucket repositories
+            \item Postgres and Oracle database technologies were used to store relational tables, views, and materialized views.
+            \item Generated embedded Power BI reports for change management analytics for the company.
+            \item Languages: Typescript, Javascript, CSS + HTML, Java, Python, Bash CLI, Postgres and Oracle SQL
+        \end{itemize}
+    {\sl Integrated Practice Solutions (Chirotouch) -}{ Las Vegas, NV - Software Engineer, Apr 2019 to Jan 2022}
+        \begin{itemize}
+            \item Worked in a team of eight to twelve colleagues on a cloud-based solution for medical treatment in the Chiropractic field. I developed senior-level skills in full-stack web development and made technical and road-map decisions. I became versed in medical field terminology, legal knowledge, and design philosophy.
+            \item Used the Google Lit framework for the front-end framework. Most of the work involved fixing bugs, writing new features for the application, and making major overhauls before product release.
+            \item Created a custom web components package for the Google Lit framework and created a design pattern for the project to fix existing bugs and to provide a consistent and reliable pattern for junior developers to follow. The `@iron` packages were deprecated and replaced by the new web components library `@zen`.
+            \item Back-end used ExpressJS and Oracle DB for REST API work. Mostly wrote CRUD-style endpoints and created new tables.
+            \item Git version management was used to manage code changes to BitBucket repositories
+            \item Languages: JavaScript, CSS + HTML, Python, SQL
+        \end{itemize}	
+    {\sl Microsoft -}{ Redmond, WA - Junior Software Engineer, Jan 2018 to Feb 2019}
+        \begin{itemize}
+            \item Worked in a team of six people on front-end and back-end application development. Developing powerful skills in Web Development in Angular and back-end hosting tools such as Azure.
+            \item Mentored heavily by the lead technical engineer on how to build a web app with Angular. I was given direct supervision in building a full-stack application from the front end to the back end.
+            \item Implemented Material UI packages throughout the application and created design principles for the rest of the team to follow.
+            \item Git version management was used to manage code changes to GitHub repositories
+            \item Created PowerBI reports for embedding in our webapp. Met with management and collected data across the company chapter. Discussions led to major changes for the company for the security of data management.
+            \item Languages: TypeScript, CSS + HTML, SQL
+        \end{itemize}	
+    % {\sl Intuit -}{ Mountain View, CA - Intern Software Engineer, Jun to Dec 2017}
+    %     \begin{itemize}
+    %         \item Worked in a team of six people on front-end software solutions for QuickBooks. Picked up ReactJS, HTML, CSS, etc on the spot.
+    %         \item Worked on translating, migrating, and querying big data for machine learning and automation. Learned about and implemented A/B Testing practices.
+    %     \end{itemize}	
+    % {\sl Robert Bosch LLC -}{ Plymouth, MI - Systems Engineer, Jan to Aug 2016}
+    %     \begin{itemize}
+    %         \item Worked on a six-person team to design and implement self-driving vehicle automation using long-range radar/camera systems, machine-learning algorithms, and Android SDK to develop the vehicle dashboard. Gained experience in working as a team, communication between teams, and how to thoroughly clean vehicles for the team.
+    %     \end{itemize}
+
+%---------------Projects-------------------------------------------
+% \section{Projects}
+    % {\sl Machine Intelligence Project: Advanced Gradient Descent for Online Card Game, Fall 2016}
+    % \begin{itemize}
+    %     \item[]
+    %     Designed and implemented a deep neural network that is used to find patterns in an online card game. The tool needed to adapt quickly (converge on minimal data) and so advanced gradient descent methods were researched and implemented for the project to allow for convergence on small training datasets.
+    % \end{itemize}
+    
+    % {\sl Senior Design Project: Active Noise Cancellation, Fall-Spring 2016-2017}
+    % \begin{itemize}
+    %     \item[]
+    %     Worked with a team of senior students to design an active noise cancellation system using the SPEAII (a multiple objective, evolutionary algorithm)
+    %     for canceling "cocktail party" noise throughout the office environment with pre-existing laptop speaker systems. A proof of concept is in its initial phases. 
+    %     The project is a proof of concept for canceling noise above 1kHz. I was responsible for building the C# software meant to handle the signal processing as well
+    %     as the lead engineer for the project. (Matlab, C\#)
+    % \end{itemize}
+
+    % {\sl Intercollegiate Rocket Engineering Competition, Fall-Spring 2015-2016}
+    % \begin{itemize}
+    %     \item Worked with different teams to design and build a rocket from scratch. (Embedded Systems, C)
+    %     \item Gained experience in modeling a rocket's propulsion system, composite material processing, control systems and designing PCB's.
+    % \end{itemize}
+    
+% 	{\sl WITR Studio X}: Helped fund, plan, build, and set up a new radio station during my undergrad years at RIT.
+% 		\begin{itemize} \itemsep -2pt
+% 			%\item Helped fund, plan, build, and set up a new radio station.
+% 		\end{itemize}
+
+%--------------Skills----------------------------------------------
+%Section: Education at the top
+\section{Skills}
+
+\begin{tabular}{rp{12cm}}
+%Languages
+ \textsc{Languages:} &  Java, Javascript/Typescript, HTML5, CSS3, Python, Ruby, C\# \\
+                        % C++, C,/.NET
+                        %\item[] ARM \& HCS12 Assembly
+ 
+ %Software
+ \textsc{Technologies:} &
+                        Java Spring,
+                        Angular 6-19,
+                        Angular Electron,
+                        NodeJS,
+                        ReactJS,
+                        Vue,
+                        Next.js,
+                        ExpressJS,
+                        JUnit,
+                        Jest/Vitest,
+                        Oracle/PostgreSQL/MySQL,
+                        AWS/Azure,
+                        Git/Github/Gitlab/BitBucket,
+                        Full-Stack CI/CD technologies (Jenkins, Sonarqube, etc) \\
+
+                        %CAN Networks,
+                        %Canape,
+                        %ROS,
+                        %KiCad,
+                        %Design Architect-IC,
+                        %Matlab
+                        %Motor Vehicle ECUs,
+                        %FPGAs,
+                        %K64 FRDM,
+                        %PSpice,
+                        %Xilinx
+                        %Microsoft Office
+                        %\item[] Microsoft Office
+                        %\item[] Red Hat
+                        %\item[] Android Studio
+                
+
+    \textsc{Miscellaneous:} & 
+        Git, GitHub, CI/CD, Jenkins, Gitlab, GitLab CI, Agile, Scrum, Node.js, Express, NestJS, REST APIs, GraphQL, Java, Java Spring, Spring Boot, JPA, JMS, Hibernate, Apache POI, C\#, .NET, Python, PostgreSQL, MySQL, MongoDB, Scalability \& load balancing, Redis, Docker, Kubernetes, Microservices \& monoliths, Event-driven architectures, RabbitMQ, API design, Authentication \& Authorization, OAuth2, JWT, Opaquetokens, OpenID Connect, Authentication, Authorization, SQL, NoSQL, Unit testing, Integration testing, Jest, Cypress, JUnit, PyTest, Webpack, Babel, ESLint, Prettier, Material CSS, TailwindCSS, Bootstrap, Material UI, System design, Monitoring, Logging, Microservices \& monoliths, Caching strategies, Problem-solving \& critical thinking
+\end{tabular}
+
+%\section{Groups and Activities}
+%    \begin{itemize}
+        %\item[]Computer Science House %Alumni
+%        \item[]RIT WITR Radio Station Engineer \& DJ\\
+%    \end{itemize}
+    
+\end{document}
