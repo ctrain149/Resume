@@ -1,4 +1,13 @@
 .DS_Store
-software_engineer.log
-software_engineer.aux
-software_engineer.out
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Job-specific applications (only base .tex is tracked)
+applications/
